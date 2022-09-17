@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+echo "Hello, this is my script!"
+touch index.html;
+echo "Hello world" > index.html;
+echo "The script is finished!";
