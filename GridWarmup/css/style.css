@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: bisque;
+}
+
+#logo{
+    height: 75px;
+}
+
+#pageheader{
+    display: grid;
+    background-color: yellow;
+    min-height: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+#pageheader > h1{
+    justify-self: center;
+    align-self: center;
+    font-size: 3.5rem;
+    color: red;
+    text-shadow: 3px 3px blue;
+}
+
+#pageheader > nav{
+    justify-self: end;
+    align-self: center;
+}
+
+#pageheader a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    border: 5px green solid;
+    border-radius: 25%;
+    padding: 0.25rem;
+    margin: 10px;
+}
+
+#pagemain{
+    display: grid;
+    /*min-height: calc(100vh - 200px);*/
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    column-gap: 5vw;
+    row-gap: 5vh;
+}
+
+section > img{
+    max-width: 100%;
+}
+
+#pagefooter{
+    margin-top: 20vh;
+}
+#pagefooter > nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
