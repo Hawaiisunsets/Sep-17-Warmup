@@ -44,13 +44,23 @@ html{
 #pagemain{
     display: grid;
     /*min-height: calc(100vh - 200px);*/
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
     column-gap: 5vw;
     row-gap: 5vh;
 }
 
+.cardgrid{
+    display: grid;
+    grid-auto-rows: min-content;
+}
+
+
 section > img{
     max-width: 100%;
+}
+.ridgetitle{
+    max-height: 7vh;
+    box-sizing: content-box;
 }
 
 #pagefooter{
@@ -59,4 +69,5 @@ section > img{
 #pagefooter > nav{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-self: end;
 }
